@@ -69,8 +69,14 @@
                              &kp LGUI   &studio_unlock    &kp SPACE    &kp RET    &studio_unlock     &kp RALT
             >;
         };
-        extra_1 {
-            status = "reserved";
+        setting_layer {
+            display-name = "SET";
+            bindings = <
+&trans &trans &trans &trans &trans &trans    &trans &trans &trans &trans &trans &trans
+&trans &trans &trans &trans &trans &trans    &trans &trans &trans &trans &trans &trans
+&trans &trans &trans &trans &trans &trans    &trans &trans &trans &trans &trans &trans
+                     &trans &trans &trans    &trans &trans &trans
+            >;
         };
 
         extra_2 {
