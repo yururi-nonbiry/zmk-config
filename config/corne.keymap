@@ -16,21 +16,27 @@
 
 / {
     /* --- 追加：独自の挙動（Mod-Morph）の定義 --- */
+
     behaviors {
         minus_under: minus_under {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp MINUS>, <&kp LS(INTERNATIONAL_1)>;
+
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
         /* --- caps lock --- */
+
         force_caps: force_caps {
-                compatible = "zmk,behavior-mod-morph";
-                #binding-cells = <0>;
-                bindings = <&kp LS(CLCK)>, <&kp CLCK>;
-                mods = <(MOD_LSFT|MOD_RSFT)>;
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp LS(CLCK)>, <&kp CLCK>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
         };
     };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -61,10 +67,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp ESCAPE        &kp N1           &kp N2       &kp N3    &kp N4      &kp N5         &kp N6     &kp N7         &kp N8        &kp N9                &kp N0   &kp DELETE
-&force_caps    &kp EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT    &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &trans   &trans
-&kp F1            &kp F2           &kp F3       &kp F4    &kp F5      &kp F6         &kp F7     &kp F8         &kp F9        &kp F10               &kp F11  &kp F12
-                                                &kp LGUI  &trans      &kp SPACE      &kp RET    &trans         &kp RALT
+&kp ESCAPE   &kp N1           &kp N2       &kp N3    &kp N4      &kp N5         &kp N6     &kp N7         &kp N8        &kp N9                &kp N0   &kp DELETE
+&force_caps  &kp EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT    &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &trans   &trans
+&kp F1       &kp F2           &kp F3       &kp F4    &kp F5      &kp F6         &kp F7     &kp F8         &kp F9        &kp F10               &kp F11  &kp F12
+                                           &kp LGUI  &trans      &kp SPACE      &kp RET    &trans         &kp RALT
             >;
         };
 
@@ -78,10 +84,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&mkp LCLK                &mkp MB3  &kp UP    &mkp RCLK       &trans          &msc SCRL_UP       &kp DQT    &kp SLASH       &kp PLUS       &kp LS(INTERNATIONAL_3)  &kp INTERNATIONAL_3  &kp BSPC
-&trans                   &kp LEFT  &kp DOWN  &kp RIGHT       &mmv MOVE_UP    &msc SCRL_DOWN     &kp COLON  &kp MINUS       &trans         &kp LEFT_BRACKET         &trans               &trans
-&kp LANG_ZENKAKUHANKAKU  &trans    &trans    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT    &kp EQUAL  &kp KP_MINUS    &kp SEMICOLON  &kp SINGLE_QUOTE         &trans               &kp INTERNATIONAL_1
-                                             &kp LGUI        &studio_unlock  &kp SPACE          &kp RET    &studio_unlock  &kp RALT
+&mkp LCLK  &mkp MB3  &kp UP    &mkp RCLK       &trans          &msc SCRL_UP       &kp DQT    &kp SLASH       &kp PLUS       &kp LS(INTERNATIONAL_3)  &kp INTERNATIONAL_3  &kp BSPC
+&trans     &kp LEFT  &kp DOWN  &kp RIGHT       &mmv MOVE_UP    &msc SCRL_DOWN     &kp COLON  &kp MINUS       &trans         &kp LEFT_BRACKET         &trans               &trans
+&kp GRAVE  &trans    &trans    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT    &kp EQUAL  &kp KP_MINUS    &kp SEMICOLON  &kp SINGLE_QUOTE         &trans               &kp INTERNATIONAL_1
+                               &kp LGUI        &studio_unlock  &kp SPACE          &kp RET    &studio_unlock  &kp RALT
             >;
         };
 

@@ -111,7 +111,7 @@ layers:
   - '['
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - LANG ZENKAKUHANKAKU
+  - '`'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&mmv MOVE_LEFT'
