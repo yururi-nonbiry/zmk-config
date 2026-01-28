@@ -20,7 +20,7 @@
         minus_under: minus_under {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp MINUS>, <&kp INTERNATIONAL_1>;
+            bindings = <&kp MINUS>, <&kp LS(INTERNATIONAL_1)>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
     };

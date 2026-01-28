@@ -36,7 +36,7 @@ layers:
   - ','
   - .
   - /
-  - {t: '-', s: INTERNATIONAL 1}
+  - {t: '-', s: Sft+INTERNATIONAL 1}
   - $$mdi:apple-keyboard-command$$
   - RAI
   - ␣
