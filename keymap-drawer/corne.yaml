@@ -1,9 +1,9 @@
 layout: {zmk_keyboard: corne}
 layers:
   BAS: [↹, Q, W, E, R, T, Y, U, I, O, P, '$$mdi:backspace-outline$$', '$$mdi:apple-keyboard-control$$', A, S, D, F, G, H, J, K, L, ']', '#', '$$mdi:apple-keyboard-shift$$',
-    Z, X, C, V, B, N, M, ',', ., /, '-', '$$mdi:apple-keyboard-command$$', LOW, ␣, ⏎, RAI, '$$mdi:apple-keyboard-option$$']
+    Z, X, C, V, B, N, M, ',', ., /, '-', '$$mdi:apple-keyboard-command$$', RAI, ␣, ⏎, LOW, '$$mdi:apple-keyboard-option$$']
   LOW:
-  - '`'
+  - ESCAPE
   - '1'
   - '2'
   - '3'
@@ -15,7 +15,7 @@ layers:
   - '9'
   - '0'
   - DELETE
-  - BT CLR
+  - CLCK
   - '!'
   - '@'
   - '#'
@@ -40,61 +40,61 @@ layers:
   - F11
   - F12
   - $$mdi:apple-keyboard-command$$
-  - {type: held}
+  - {t: ▽, type: trans}
   - ␣
   - ⏎
-  - {t: ▽, type: trans}
+  - {type: held}
   - $$mdi:apple-keyboard-option$$
   RAI:
-  - ESCAPE
-  - {t: ▽, type: trans}
+  - '&mkp LCLK'
+  - '&mkp MB3'
   - ↑
+  - '&mkp RCLK'
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - (
+  - '&msc SCRL_UP'
+  - '"'
   - /
   - +
-  - '='
+  - Sft+INTERNATIONAL 3
   - INTERNATIONAL 3
   - $$mdi:backspace-outline$$
-  - $$mdi:apple-keyboard-control$$
+  - {t: ▽, type: trans}
   - ←
   - ↓
   - →
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&mmv MOVE_UP'
+  - '&msc SCRL_DOWN'
   - ':'
   - '-'
   - {t: ▽, type: trans}
   - '['
-  - '}'
-  - '|'
-  - $$mdi:apple-keyboard-shift$$
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - LANG ZENKAKUHANKAKU
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&mmv MOVE_LEFT'
+  - '&mmv MOVE_DOWN'
+  - '&mmv MOVE_RIGHT'
   - '='
   - KP MINUS
   - ;
   - ''''
-  - \
+  - {t: ▽, type: trans}
   - INTERNATIONAL 1
   - $$mdi:apple-keyboard-command$$
-  - '&studio_unlock'
+  - {t: '&studio_unlock', type: held}
   - ␣
   - ⏎
-  - {t: '&studio_unlock', type: held}
+  - '&studio_unlock'
   - $$mdi:apple-keyboard-option$$
   SET:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - PAGE UP
+  - PAUSE
+  - SCROLLLOCK
+  - PRINTSCREEN
   - {t: '$$mdi:led-on$$', h: '$$mdi:toggle-switch$$', s: '$$mdi:led-outline$$', type: toggle}
   - {t: '$$mdi:led-outline$$', s: '$$tabler:brightness-down$$', type: sym_by_sym}
   - {t: '$$mdi:led-on$$', s: '$$mdi:palette$$', type: sym_by_sym}
@@ -102,11 +102,11 @@ layers:
   - {t: '$$mdi:led-on$$', h: '$$mdi:speedometer$$', type: sym_by_sym}
   - {t: '$$mdi:led-on$$', h: '$$mdi:page-previous-outline$$', type: tap_dance}
   - {t: ▽, type: trans}
+  - Home
+  - PAGE DOWN
+  - End
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - INSERT
   - {t: '$$mdi:led-on$$', h: '$$mdi:page-previous-outline$$', type: tap_dance}
   - {t: '$$mdi:led-on$$', s: '$$tabler:brightness-up$$', type: sym_by_sym}
   - {t: '$$mdi:led-outline$$', s: '$$mdi:palette$$', type: sym_by_sym}
