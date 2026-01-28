@@ -56,7 +56,7 @@ layers:
   - '9'
   - '0'
   - DELETE
-  - force caps
+  - {t: Sft+CLCK, s: CLCK}
   - '!'
   - '@'
   - '#'

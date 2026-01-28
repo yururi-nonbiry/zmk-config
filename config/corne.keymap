@@ -62,7 +62,7 @@
 
             bindings = <
 &kp ESCAPE        &kp N1           &kp N2       &kp N3    &kp N4      &kp N5         &kp N6     &kp N7         &kp N8        &kp N9                &kp N0   &kp DELETE
-&kp force_caps    &kp EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT    &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &trans   &trans
+&force_caps    &kp EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT    &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &trans   &trans
 &kp F1            &kp F2           &kp F3       &kp F4    &kp F5      &kp F6         &kp F7     &kp F8         &kp F9        &kp F10               &kp F11  &kp F12
                                                 &kp LGUI  &trans      &kp SPACE      &kp RET    &trans         &kp RALT
             >;
